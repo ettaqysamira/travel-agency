@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&family=Work+Sans:ital,wght@0,300;1,300&display=swap');
+*{
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.home-travel-section{
+height: 100vh;
+   background:  linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(background.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+
+
+}
+header ul{
+    margin: 0;
+   
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+header{
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    z-index: 1000;
+}
+nav{
+   display: flex;
+   width: 100%;
+   height: 100%;
+   backdrop-filter: blur(30px);
+   box-shadow: 0px 0px 30px rgba(277, 228, 237, 0.37);
+   border: 2px solid rgba(255, 255, 255, 0.18);
+   
+}
+header ul li{
+    margin: 25px;
+}
+ul li a{
+    color: #fff ;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+.travel-logo{
+    display: flex;
+    gap: 10px;
+    width: 20%;
+    margin: 10px;
+}
+.travel-logo i{
+    padding-top: 6px;
+}
+
+.travel-logo h2{
+    margin: 0;
+    font-size: 40px;
+}
+.home-travel-agency h1{
+    text-align: center;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    position: absolute;
+    top: 250px;
+    left: 300px;
+    color: #fff;
+}
+.button-home{
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    height: 50px;
+    width: 15%;
+    border: 2px solid black;
+    background-color: #f5d300;
+}
+.button-home a{
+    color: black;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+}
+
+
+
+
+/*************************section-destination********************************/
+.destinations-section >h1{
+    text-align: center;
+    margin-top: 70px;
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+}
+.destinations-section{
+width: 200vh;
+}
+.travel-destination{
+    width: 65%;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    
+}
+
+.travel-destination div img{
+width: 285px;
+height: 330px;
+opacity: 1;
+
+}
+
+
+
+
+.travel-destination .morocco{
+    clip-path: polygon(0 0, 100% 0, 100% 90%, -12% 100%);
+
+}
+.travel-destination .dubai{ clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 90%);}
+.travel-destination .canada{ clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 80%);}
+
+.travel-destination .tailand{ clip-path: polygon(0 30%, 100% 20%, 100% 80%, 0 70%); margin-top: -100px;}
+.travel-destination .greece{ clip-path: polygon(0 20%, 100% 10%, 100% 90%, 0 80%); margin-top: -100px;}
+.travel-destination .egypt{ clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);  margin-top: -100px;}
+
+.travel-destination .turky{ clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);  margin-top: -100px;}
+.travel-destination .france { clip-path: polygon(0 10%, 100% 20%, 100% 100%, 0% 100%);  margin-top: -100px;}
+.travel-destination .belgique{ clip-path: polygon(0 20%, 100% 30%, 100% 100%, 0% 100%);  margin-top: -100px;}
+
+.travel-destination > div:hover{
+    transition: clip-path 0.7s ;
+    
+    scale: 1.5;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    z-index: 1000;
+    
+}
+.travel-destination div img:hover{
+    opacity: 1;
+}
+
+.travel-destination div div{
+    background-color:  rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 75px;
+    text-align: center;
+    padding-top: 4px;
+    position: absolute;
+    z-index: 2000;
+    bottom: 0;
+    display: none;
+   
+
+}
+.travel-destination div div h2{
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+}
+.travel-destination div div a{
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    position: relative;
+    right: -90px;
+    bottom: 0px;
+    text-decoration: none;
+}
+.travel-destination div:hover div{
+    display: block;
+}
+/***************************************************************************/
+/********************************section2*******************************/
+.tour-section >h1{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 70px;
+    font-family: "Raleway", sans-serif;
+}
+.tour-section{
+  height: 250vh;
+}
+.container-tour{
+    width: 90%;
+    margin: 25px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+
+}
+.tour{
+    /*background-color: blue;*/
+}
+.tour >div{
+    margin-top: 10px;
+}
+.tour button{
+    position: relative;
+    left: 120px;
+    width: 40%;
+    height: 30px;
+    border-radius: 0;
+    border: 2px solid black;
+    background-color: #f5d300;
+}
+.container-tour > div{
+    width: 25%;
+    margin: 15px 0;
+} 
+.container-tour >div img{
+width: 100%;
+height: 250px;
+}
+.container-tour >div:hover{
+scale: 1.1;
+
+}
+/***********************************************************************/
+/********************************contact-section******************************/
+.contact-section{
+   height: 100vh;
+}
+.contact{
+    width: 95%;
+    margin: 50px auto;
+    background-color: #1ab2ff;
+    display: flex;
+    gap: 30px;
+    
+}
+.contact-us{
+    width: 35%;
+    margin-left: 5px;
+}
+.contact h1{
+    font-family: "Raleway", sans-serif;
+}
+.follow-us{
+    width: 35%;
+}
+.message{
+    width: 40%;
+}
+
+
+form input{
+    box-sizing: border-box;
+    display: block;
+    height:35px ;
+    width: 275px;
+    margin: 10px 0;
+    padding: 15px;
+}
+form textarea{
+    display: block;
+    padding: 15px;
+    width: 242px;
+    height: 100px;
+}
+.follow{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    text-align: center;
+    padding-top: 12px;
+    box-sizing: border-box;
+}
+.color{
+    color: #fff;
+}
+.travel-agency-social{
+    display: flex;
+    gap: 15px;
+    margin-left: 2px;
+}
+.contact-us-info{
+    margin-bottom: 15px;
+}
+form button{
+    margin-top: 10px;
+    width: 40%;
+    height: 40px;
+    border-radius: 0;
+    background-color: #f5d300;
+    border: 2px solid black;
+}
+/***************************************************************************/
+
